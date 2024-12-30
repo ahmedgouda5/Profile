@@ -1,0 +1,35 @@
+:root {
+  --color-one: #f4f4f5;
+  --color-two: rgb(161 161 170);
+}
+.border {
+  border: 2px solid red;
+}
+
+.contain {
+  width: 88%;
+  margin-inline: auto;
+}
+
+.left_section h1 {
+  color: var(--color-one);
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+.left_section p {
+  color: var(--color-two);
+  margin: 24px 0 0;
+}
+
+.social_icon{
+    margin: 15px 0 0 ;
+    color:var(--color-two);
+}
+.Avater{
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+.varfied{
+   transform: translateY(30px);
+}

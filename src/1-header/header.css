@@ -1,0 +1,123 @@
+/* &start header and Navbar */
+.mover {
+  background-color: rgb(65, 65, 66);
+  padding: 10px 12px;
+  border: 1px solid rgb(65, 65, 66);
+  border-radius: 19px;
+}
+header ul li a {
+  color: var(--title);
+  transition: all 300ms;
+}
+
+header li a:hover {
+  color: rgb(109, 230, 189);
+}
+
+header nav .mover {
+  box-shadow: 1px 1px 40px rgb(103, 103, 105);
+}
+/* &End header and Navbar */
+
+/*!!!!!!!!START model */
+
+header .menu {
+  display: none;
+  background-color: rgb(37, 37, 40);
+  color: rgb(98, 98, 107);
+  transition: color 400ms;
+
+}
+header .menu:hover{
+    color: #fff;
+}
+header .model {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(103, 103, 105, 0.671);
+  z-index: 5;
+}
+
+header .model .modelBar {
+  animation: move 1s 1;
+  position: relative;
+  width: 80%;
+  background-color: var(--primary);
+  margin-inline: auto;
+  margin-top: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+@keyframes move {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+header .model .modelBar li {
+  border-bottom: 2px solid rgb(65, 65, 66);
+  padding-block: 1rem;
+}
+header .model .modelBar li a {
+  font-size: 1rem;
+}
+header .model .modelBar li:last-of-type {
+  border: none;
+}
+header .model .modelBar .hide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+}
+header .model .modelBar .hide .cancle:hover {
+  color: red;
+  scale: 1.7;
+  rotate: 360deg;
+  transition: all 500ms;
+  font-size: x-large;
+}
+
+/*!!!!!!!!END model */
+/**dark mode */
+.moon {
+  background-color: rgb(37, 37, 40);
+  border: 1px solid rgb(244, 165, 96, 0.249);
+  color: rgb(98, 98, 107);
+  border-radius: 50%;
+  font-size: larger;
+  transform: color 400ms;
+}
+.moon:hover{
+    color: #fff;
+}
+/**dark mode */
+
+/*~ RESPONSIVE DESIGN */
+@media (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+  header .menu {
+    display: block;
+    background-color: rgb(37, 37, 40);
+    border: 1px solid rgb(244, 165, 96, 0.249);
+    color: rgb(98, 98, 107);
+    border-radius: 50%;
+    font-size: larger;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  header .menu i {
+    box-shadow: 1px 2px 30px rgb(103, 103, 105);
+  }
+}

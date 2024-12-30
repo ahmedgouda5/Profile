@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary:rgb(24,24,27);
+    --secondary:rgb(255,255,255);
+    --border:rgb(65, 65, 66) ;
+    --title:rgb(244,244,245);
+    --subTitle:rgb(161,161,170);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  
+
+html{
+    font-family: "Roboto", sans-serif;
+
+}
+
+body{
+   background-color: black;
+    color:#fff;
+}
+
+.cotainer{
+   background-color: var(--primary);
+   border: 1px solid var(--border);
+   width: 80%;
+   margin-inline:auto ;
+}
+
+.divider{
+    border-bottom: 2px solid var(--border);
+    margin: 3rem 0;
+}
+
+header ul li a{
+    color: var(--title);
+}
+
+.black{
+    background-color: rgb(24,24,27);
+}
