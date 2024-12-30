@@ -15,7 +15,7 @@ const Hero = () => {
           />
           {/* <i className="verified text-sky-500 fa-solid fa-circle-check"></i> */}
         </div>
-        <h1>Software Enginner specialist in frontend developer.</h1>
+        <h1>Software developer specialist in frontend developer.</h1>
         <p>
           I’m Ahmed Abdel Gawad, a frontend developer based in Egypt. I specialize in
           building responsive, user-friendly web applications using modern
